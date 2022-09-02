@@ -1,0 +1,255 @@
+.circulos{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    z-index: 1;
+  }
+  .circulos .circulo{
+   position: absolute;
+   width:50%;
+   height: 50%;
+  }
+  .circulos .circulo1{
+    top:0%;
+    left:0%;
+    
+  }
+  .circulos .circulo2{
+    top:0%;
+    right:0%;
+  }
+
+  .circulos .circulo3{
+    bottom:0%;
+    left:0%;
+  }
+ 
+  .circulos .circulo4{
+    bottom:0%;
+    right:0%;
+  }
+
+.header{
+    width: 100%;
+    min-height: 5em;
+    background: lightblue;
+
+    padding: 1em 2em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    display: none;
+}
+.header .h1{
+ 
+}
+
+.header .h1 .a{}
+
+.header .nav{}
+
+.header .ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .li{
+    margin: 0 1em;
+}
+.header .li .a{}
+
+
+.main{
+    background: lightgrey;
+    margin: 0 0 1em ;
+    text-align: center;
+}
+.seccion{
+    width: 100%;
+    min-height: 80vh;
+    background: lightblue;
+    margin: 1em 0;
+    padding: 2em 0;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+.seccion .info{
+    font-size: 1.2em;
+}
+
+.seccion .ul{
+    margin: 2em 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.seccion .ul .li{
+
+    margin: 0 1em;
+}
+.seccion .ul .a{
+    border: 2px solid rgba(0,0,0, .4);
+    border-radius: 50%;
+    padding: 1em 1em 1em;
+    text-transform: uppercase;
+    font-weight: 800;
+    transition: all .5s ease;
+}
+.seccion .ul .a:hover{
+    border-color: black;
+}
+.seccion .h2{
+    font-family: var(--tipo-titular);
+    font-size: 5em;
+    font-weight: 600;
+    line-height: 1em;
+
+}
+.seccion .h3{
+    font-family: var(--tipo-titular);
+    font-size: 4em;
+    font-style: italic;
+}
+
+.seccion .p{}
+/*cotenedor de proyectos*/
+.seccion .grid{
+    width: 90%;
+    max-width: 40em;
+    margin: 1em 0;
+
+    display: grid;
+    /*reponsib*/
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    /* separa los proyectos*/
+    gap:1em;
+}
+.seccion .article{
+    width: 100%;
+    min-height: 25vh;
+    background: lightgoldenrodyellow;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    overflow: hidden;
+}
+.seccion .a{}
+.seccion .figure{
+    width: 100%;
+    background: red;
+}
+.seccion .img{
+    width: 100%;
+    background: lime;
+}
+.seccion .h4{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0,0, .5);
+    backdrop-filter: blur(1rem);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 1.8em;
+    font-family: var(--tipo-titular);
+    font-style: italic;
+
+    opacity: 0;
+    /* movimientos de los trabajos*/
+    transform: scale(1.2);
+    transition: all .5s ease;
+}
+/*transiciones*/
+.seccion .article:hover .h4{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.works .h2{
+    margin: 0 0 1em;
+}
+
+.about{
+    
+}
+.about .h2{
+    margin: 0 0 .8em;
+}
+.about .p{
+    max-width: 40rem;
+    
+    margin: 0 0 1em;
+    font-size: 1.5em;
+    text-align: left;
+}
+.about .rrss{
+    width: 100%;
+    
+
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+.about .li{
+   
+    margin: 0 1em;
+  
+}
+.about .a{
+   
+}
+.about .svg{
+    width: 2em;
+    height: 2em;
+    
+    
+ 
+}
+
+
+.footer{
+    background: lightpink;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.footer .span{
+
+}
+
+
+
+/*
+<a href="https://www.freepik.es/vector-gratis/modelos-moda-atuendo-urbano_5199265.htm#query=model%20man&position=3&from_view=search">Imagen de coolvector</a> en Freepik
+*/
+/*
+<a href="https://www.freepik.es/foto-gratis/hombre-llevando-rojo-polo-camisa_1143127.htm#query=modelo%20hombre&position=8&from_view=keyword">Imagen de luis_molinero</a> en Freepik
+*/
+/*
+Imagen de <a href="https://www.freepik.es/vector-gratis/diseno-plano-coleccion-ninos-halloween_5409995.htm#query=batman&position=5&from_view=search">Freepik</a>
+*/
